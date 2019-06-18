@@ -11,7 +11,7 @@ module.exports = {
         nav: [
             { text: '主页', link: '/', icon: 'reco-home' },
             { text: '历史', link: '/timeLine/', icon: 'reco-date' },
-            { text: '简历', link: '/about/', icon: 'reco-account' },
+            { text: '简历', link: '/resume/', icon: 'reco-account' },
             { text: 'Github', link: 'https://github.com/fengzhongsen/', icon: 'reco-github' },
             {
                 text: '友情链接',
@@ -44,7 +44,8 @@ module.exports = {
         // 首页相关配置
         huawei: false,
         author: '冯忠森',
-        startYear: '2017',
+        record: '晋IPC备19007704号-1',
+        startYear: '2016',
     },
     markdown: {
         lineNumbers: true

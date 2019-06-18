@@ -1,9 +1,6 @@
 ---
 title: 冯忠森 - Web前端工程师
-date: 2017-11-30 15:29:12
 isComment: false
-keys:
-  - '12345'
 ---
 
 ## 基本信息
@@ -85,6 +82,6 @@ keys:
 校友助学金（学院唯一名额）
 
 ## 作品展示
-一条生活馆：https://h5.yit.com/  汇聚全球良品的生活方式电商，拥有数千万用户<br/>
-购书云官网：http://www.goushuyun.com/  图书行业一站式解决方案<br/>
-老冯博客：http://fblog.top/  个人博客
+1. [一条生活馆](https://h5.yit.com/)  汇聚全球良品的生活方式电商，拥有数千万用户
+2. [购书云官网](http://www.goushuyun.com/)  图书行业一站式解决方案
+3. [老冯博客](http://fblog.top/) 个人博客
