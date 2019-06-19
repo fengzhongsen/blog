@@ -84,8 +84,6 @@ $ cat /var/lib/jenkins/secrets/initialAdminPassword
 <img src="/jenkins/2.png" />
 
 ### 2.3 安装 Nginx
-因为是前端项目，所以服务器软件选择了 `Nginx`，如果是 `Java` 项目，也可以选择 `Tomcat`，当然还有神器 `Docker`。
-
 1. 安装 `Nginx`
 ```
 $ yum install nginx -y
@@ -113,7 +111,7 @@ location / {
 $ nginx -t
 ```
 
-4. 重启 `Nginx`
+4. 刷新 `Nginx` 配置
 ```
 $ nginx -s reload
 ```
@@ -140,9 +138,17 @@ $ nvm install --lts
 2. [其他安装方法](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-a-centos-7-server)
 :::
 
-## 三、GitHub 和 Jenkins 的全局配置
-### 3.1 GitHub 生成 Personal Access Token
 
+
+
+
+
+
+
+
+## 三、Jenkins 全局配置
+
+### 3.1 GitHub 生成 Personal Access Token
 进入 [Github - Setting - Developer Setting - Personal Access Token](https://github.com/settings/tokens)，点击 `Generate new token` （可能需要输入 `GitHub` 密码）后开始创建：
 1. 在 `Note` 一栏输入描述信息，看自己心情就好，比如：`Jenkins-hook`
 2. 在 `Select scopes` 一项中勾选 `repo` 和 `admin:repo_hook`
@@ -151,43 +157,50 @@ $ nvm install --lts
 
 <img src="/github/1.png">
 
-### 3.2 Jenkins 全局配置
-1. 进入 `Manage Jenkins - Global Tool Configuration` 配置 `Git - Path to Git executable` 之后 `保存`，可使用 `whereis git` 命令查看 `Git` 的位置。
+### 3.2 配置 GitHub 选项
+进入 `Manage Jenkins - Config System` 配置 `GitHub - Github 服务器`。
+1. 添加一个服务器，名称看心情，可为空。
+
+<img src="/jenkins/4.png">
+
+2. 添加一个 `Secret text` **类型**的 `全局凭证`。**Secret**中填入 3.1 中的 `Secret text`： `aa406d89b16c37d73e2beaec5e9bf8bdfcb52982`，**描述**简单写一下。
+
+<img src="/jenkins/5.png">
+
+### 3.3 配置 Git 选项
+进入 `Manage Jenkins - Global Tool Configuration` 配置 `Git - Path to Git executable`。
 
 <img src="/jenkins/3.png">
 
-2. 进入 `Manage Jenkins - Config System` 配置 `GitHub - Github 服务器`:<br/>
-(1) 点击 `添加 GitHub 服务器 - GitHub Server` 来添加一个服务器，名称看心情，可为空。<br/>
-(2) 在**凭证**一项中点击 `添加 - Jenkins` 给服务器添加一个 `全局凭证`。**类型**选 `Secret text`，**Secret**中填入 3.1 中的 `Secret text`： `aa406d89b16c37d73e2beaec5e9bf8bdfcb52982`，**描述**简单写一下。
-(3) 选择刚创建好的 `全局凭证` 后 `保存`。
+::: tip 提示
+可使用 `whereis git` 命令查看 `Git` 的位置。
+:::
 
-<img src="/jenkins/4.png">
-<img src="/jenkins/5.png">
-
-## 四、创建一个自由风格的任务
+## 四、自由风格项目的配置
+创建一个新的项目，输入一个任务名称，选择 `Freestyle project`
 
 <img src="/jenkins/project-config-00.png">
 
-### 4.1 Jenkins 项目配置
-#### 4.1.1 General
-> 配置 `GitHub 项目 - 项目 URL`。
+### 4.1 General
+分别配置 `描述`、`GitHub项目`、`丢弃旧的构建策略` 三个选项
 
 <img src="/jenkins/project-config-01.png">
 
-#### 4.1.2 源码管理
-> 选择 `Git` 并配置 `Repositories`。
-1. Repository URL: 用于执行 `git clone` 的仓库URL。<br/>
-2. Credentials: 添加一个 `Username with password` **类型**的`全局凭证`，**用户名**和**密码**分别是 `GitHub` 的用户名和密码，**描述**简单写一下。
+### 4.2 源码管理
+分别配置 `Git`、`源码库浏览器` 两个选项
 
 <img src="/jenkins/project-config-02.png">
+
+这里需要添加一个 `Username with password` **类型**的`全局凭证`，**用户名**和**密码**分别是 `GitHub` 的用户名和密码，**描述**简单写一下。
+
 <img src="/jenkins/project-config-03.png">
 
-#### 4.1.3 构建触发器
-> 该部分可以最后配置 
+### 4.3 构建触发器
+> 该部分可以独立于本节之外，单独配置 
 
 详见[Jenkins与Github集成webhook配置](https://blog.csdn.net/qq_21768483/article/details/80177920)
 
-#### 4.1.4 构建环境
+### 4.4 构建环境
 > 到目前为止，我们一共创建了两个 `全局凭证`，一个是 `Secret text` **类型**的，一个是 `Username with password` **类型**的。
 
 1. 勾选 `Use secret text(s) or file(s)`，并新增一个 `Secret text` **类型**的**绑定**。
@@ -198,15 +211,13 @@ $ nvm install --lts
 
 <img src="/jenkins/project-config-06.png">
 
-#### 4.1.5 构建
-
-1. 新增一个`执行shell` 类型的构建。
-2. 编写编译和部署项目的shell脚本。
+### 4.5 构建
+新增一个`执行shell` 类型的构建，并编写编译和部署项目的shell脚本。
 
 <img src="/jenkins/project-config-07.png">
 
 ::: warning
-到目前为止我们对服务器的操作都是以 root 用户的身份进行的，但是 Jenkins 的默认用户是 jenkins，而 jenkins 没有权限操作属于 root 的文件，所以我们需要修改 Jenkins 配置文件，将Jenkins 的默认用户 jenkins 改成 root<br/>
+一、到目前为止我们对服务器的操作都是以 root 用户的身份进行的，但是 Jenkins 的默认用户是 jenkins，而 jenkins 没有权限操作属于 root 的文件，所以我们需要修改 Jenkins 配置文件，将Jenkins 的默认用户 jenkins 改成 root<br/>
 1. 将配置文件中的 `JENKINS_USER` 的值修改为 `root`
 ```
 $ vim /etc/sysconfig/jenkins
@@ -216,7 +227,7 @@ $ vim /etc/sysconfig/jenkins
 $ service jenkins restart
 ```
 
-此外我用了包管理工具 yarn，而不是 npm，故还需要全局安装一个 yarn
+二、此外我用了包管理工具 yarn，而不是 npm，故还需要全局安装一个 yarn
 ```
 $ npm install yarn -g
 ```
@@ -224,16 +235,18 @@ $ npm install yarn -g
 
 <span id="github-config"></span>
 
-## 五、其他集成工具
-流行的除了 `Jenkins CI` 还有 [Travis CI](https://travis-ci.org)、[Circle CI](https://circleci.com/) 等 [GitHub 十大 CI 工具](https://www.jianshu.com/p/64fc783568b1)。
+::: tip 拓展：其他集成工具
+除了 `Jenkins CI` 还有 [Travis CI](https://travis-ci.org)、[Circle CI](https://circleci.com/) 等 [GitHub 十大 CI 工具](https://www.jianshu.com/p/64fc783568b1)，其中
 
 1. `Travis CI` 是基于 `GitHub` 的 `CI` 托管解决方案之一，由于和 `GitHub` 的紧密集成，在开源项目中被广泛使用。
-2. `CircleCI` 是一款很有特色，也是比较流行的云端持续集成管理工具，目前仅支持 `GitHub` 和 `bitbucket`，它和其他工具的区别在于骂他提供服务的方式不同，`CircleCI` 需要付费的资源主要是它的容器。
+2. `CircleCI` 是一款很有特色，也是比较流行的云端持续集成管理工具，目前仅支持 `GitHub` 和 `bitbucket`，它和其他工具的区别在于他提供服务的方式不同，`CircleCI` 需要付费的资源主要是它的容器。
+:::
 
-## 六、参考文献
+## 五、参考文献
 1. [从零搭建web前端持续集成环境: github+jenkins+nodejs+nginx](https://blog.csdn.net/liang526011569/article/details/88120378#23_nodejs_65)
 2. [How To Install Node.js on a CentOS 7 server](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-a-centos-7-server)
 3. [CentOS7使用yum命令安装Java1.8](https://www.cnblogs.com/zdz8207/p/CentOS-yum-java.html)
 4. [NVM's GitHub Page](https://github.com/nvm-sh/nvm#installing-nvm-on-alpine-linux)
 5. [Jenkins执行脚本提示没有权限的解决办法](https://www.jianshu.com/p/fa546f723724)
 6. [Jenkins与Github集成webhook配置](https://blog.csdn.net/qq_21768483/article/details/80177920)
+7. [GitHub 十大 CI 工具](https://www.jianshu.com/p/64fc783568b1)
