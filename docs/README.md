@@ -2,7 +2,7 @@
 home: true
 heroImage: /header-background.jpg
 # actionText: Resume
-# actionLink: /about/
+# actionLink: /resume/
 
 heroImageStyle: {
   width: '100%',
