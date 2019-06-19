@@ -1,6 +1,6 @@
 ---
 title: 基于Jenkins+Github的CI/CD
-date: 2019-06-18 14:44:00
+date: 2019-06-17 00:00:00
 categories:
   - 技术篇
 tags:
@@ -117,34 +117,11 @@ $ nginx -s reload
 ```
 
 ### 2.4 安装 NodeJS
-1. 安装 `NVM`
-```
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-```
-
-2. 刷新配置文件
-```
-$ source ~/.bash_profile
-```
-
-3. 安装 `NodeJS`
-```
-$ nvm install --lts
-```
+参考[在CentOS7上安装NodeJS](/tech/在CentOS7上安装NodeJS/)中的方法。
 
 ::: tip
-`CentOS7` 安装 `NodeJS` 有很多种方法，我推荐使用版本管理器安装，方便有需要时切换版本。
-1. [NVM's GitHub Page](https://github.com/nvm-sh/nvm#installing-nvm-on-alpine-linux)
-2. [其他安装方法](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-a-centos-7-server)
+推荐方法一，理由是最简单最快最不容易出错，另外要注意自己项目依赖的 Node 版本。
 :::
-
-
-
-
-
-
-
-
 
 ## 三、Jenkins 全局配置
 
