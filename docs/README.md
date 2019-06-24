@@ -12,11 +12,11 @@ heroImageStyle: {
 }
 
 features:
-- title: Who am I
+- title: 我是谁
   details: A coding lover, a life lover.
-- title: Where I am
+- title: 我从哪里来
   details: The way to the technology peak.
-- title: Where am I going
+- title: 我到哪里去
   details: Higher level and new world.
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---

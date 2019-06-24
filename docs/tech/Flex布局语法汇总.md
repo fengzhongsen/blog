@@ -1,7 +1,7 @@
 ---
 title: Flex布局语法汇总
 date: 2018-03-16 22:59:00
-categorys:
+categories:
   - 技术篇
 tags:
   - 前端
