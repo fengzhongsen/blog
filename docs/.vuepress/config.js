@@ -44,7 +44,7 @@ module.exports = {
         // 首页相关配置
         huawei: false,
         author: '冯忠森',
-        startYear: '2017',
+        startYear: '2016',
     },
     markdown: {
         lineNumbers: true

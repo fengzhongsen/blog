@@ -1,6 +1,6 @@
 ---
-title: 在CentOS7上安装NodeJS
-date: 2019-06-16 00:00:01
+title: 【Linux】在CentOS7上安装NodeJS
+date: 2019-06-16 12:00:01
 categories:
   - 技术篇
 tags:

@@ -1,6 +1,6 @@
 ---
-title: 在CentOS7上安装Java8
-date: 2019-06-16 00:00:00
+title: 【Linux】在CentOS7上安装Java8
+date: 2019-06-16 12:00:00
 categories:
   - 技术篇
 tags:
