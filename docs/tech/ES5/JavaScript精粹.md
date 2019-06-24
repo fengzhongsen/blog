@@ -88,10 +88,10 @@ APP.flight = { ....... }
 ## 四、函数
 1. 对象是“键/值”对的集合并拥有一个连接到原型对象的隐藏连接。对象字面量产生的对象连接到 `Object.prototyoe`。 
 2. 函数对象连接到 `Function.prototype`（该源性对象本身连接到 `Object.prototype`）。 
-3. 每个函数除了参数列表还会接收两个附加的参数：`this`、`arguments`。参数 `this` 的值取决于调用模式，
+3. 每个函数除了参数列表还会接收两个附加的参数：`this`、`arguments`。参数 `this` 的值取决于调用模式。
 4. 在 `JavaScritp` 中一共有四种调用模式：方法调用模式、函数调用模式、构造器调用模式和 `apply` 调用模式。 
 5. 形参个数可以与实参个数不配，若发生，长出的参数将被忽略，少了的参数将被设置成 `undefined`。 
 6. `arguments` 是一个 `类数组对象`，用来存放参数列表。 
-7. `return` 被执行时，函数立即返回。一个函数总有一个返回值i，如果没有则返回 `undefined`。
-8. `throw` 语句中断函数执行，抛出一个 `exception` 对象，`throw{{name：‘’，message：‘’}}`。 
-9. 作用域的好处是函数可以访问定义他们的外部函数的参数和变量，除了 `this` 和 `arguments`。`
+7. `return` 被执行时，函数立即返回。一个函数总有一个返回值，如果没有则返回 `undefined`。
+8. `throw` 语句中断函数执行，抛出一个 `exception` 对象 `{name：''，message：''}`。
+9. 作用域的好处是函数可以访问定义他们的外部函数的参数和变量，除了 `this` 和 `arguments`。
