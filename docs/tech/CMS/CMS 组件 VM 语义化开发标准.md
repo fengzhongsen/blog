@@ -9,10 +9,6 @@ tags:
   - 规范
 ---
 
-- [1 语义化标签定义](#1-语义化标签定义)
-- [2 VM模版开发示例](#2-vm模版开发示例)
-
-
 ## 一、语义化标签定义
 
 > 以下是已经定义好的语义化标签，后续会根据需要而新增
@@ -226,10 +222,10 @@ module-footer {
 ## 二、VM模版开发示例
 
 > 下面以“猜你喜欢”组件为例，给出了VM书写模版。开发新组件只需要复制以下代码并在此基础上开发即可。例如开发的组件名为 `h5DaliyHot`:
-> - 修改 <cms-module> 上的 `h5-guess-like` 为 `h5-daliy-hot`
-> - 修改 <module-main> 上的 `guess-like-cont` 为 `daliy-hot-cont`
-> - 主体内容写在 <module-main> 内
-> - ***加载更多*** 等操作写在 <module-footer> 内
+> - 修改 `<cms-module>` 上的 `h5-guess-like` 为 `h5-daliy-hot`
+> - 修改 `<module-main>` 上的 `guess-like-cont` 为 `daliy-hot-cont`
+> - 主体内容写在 `<module-main>` 内
+> - **加载更多** 等操作写在 `<module-footer>` 内
 
 ```html
 <cms-module class="h5-guess-like" style="

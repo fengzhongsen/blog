@@ -6,6 +6,7 @@ categories:
 tags:
   - 前端
   - JavaScript
+  - ES5
 ---
 
 ## 一、几个概念
