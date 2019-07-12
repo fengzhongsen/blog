@@ -44,6 +44,7 @@ module.exports = {
         // 首页相关配置
         huawei: false,
         author: '冯忠森',
+        record: '晋IPC备19007704号-1',
         startYear: '2016',
     },
     markdown: {
