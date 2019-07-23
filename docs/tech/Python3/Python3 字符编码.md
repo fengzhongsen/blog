@@ -1,6 +1,6 @@
 ---
 title: 【Python3】字符编码
-date: 2018-03-09 12:00:00
+date: 2018.03.09 12:00:00
 categories:
   - 技术篇
 tags: 

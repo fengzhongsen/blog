@@ -1,6 +1,6 @@
 ---
 title: 【Android系统源代码分析】第七章 分析ActivityManagerService
-date: 2016-01-31 12:00:00
+date: 2016.01.31 12:00:00
 categories:
   - 技术篇
 tags:

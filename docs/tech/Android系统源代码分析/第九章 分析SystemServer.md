@@ -1,6 +1,6 @@
 ---
 title: 【Android系统源代码分析】第九章 分析SystemServer
-date: 2016-02-02 12:00:00
+date: 2016.02.02 12:00:00
 categories:
   - 技术篇
 tags:

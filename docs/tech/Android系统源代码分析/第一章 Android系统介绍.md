@@ -1,6 +1,6 @@
 ---
 title: 【Android系统源代码分析】第一章 Android系统介绍
-date: 2016-01-25 12:00:00
+date: 2016.01.25 12:00:00
 categories:
   - 技术篇
 tags:

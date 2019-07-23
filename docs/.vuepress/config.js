@@ -1,26 +1,52 @@
 module.exports = {
     title: `老冯博客`,
-    description: 'Just Do It !',
+    description: 'Enjoy when you can, and endure when you must.',
     head: [
         ['link', { rel: 'icon', href: '/favicons.png' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
     ],
     theme: 'reco',
     themeConfig: {
+        type: 'blog',
+        mode: 'light',
         // 导航
         nav: [
             { text: '主页', link: '/', icon: 'reco-home' },
             { text: '历史', link: '/timeLine/', icon: 'reco-date' },
-            { text: '简历', link: '/resume/', icon: 'reco-account' },
+            { text: '关于', link: '/resume/', icon: 'reco-account' },
             { text: 'Github', link: 'https://github.com/fengzhongsen/', icon: 'reco-github' },
+        ],
+        friendLink: [
             {
-                text: '友情链接',
-                items: [
-                    // { text: 'Orican', link: 'https://oricanis.github.io/' },
-                    { text: '黄可锰', link: 'https://i-tech.tech/' },
-                    { text: 'Jhon', link: 'http://xzzdll.cn/' }
-                ]
-            }
+                title: 'Tony Xu',
+                desc: '我是一名软件工程师，热爱尝试和分享最新科技',
+                // logo: 'https://tonyxu.io/images/square-logo.webp',
+                link: 'https://tonyxu.io/zh/'
+            },
+            {
+                title: '午后杂南',
+                desc: 'Enjoy when you can, and endure when you must.',
+                logo: 'https://www.recoluan.com/head.png',
+                link: 'https://www.recoluan.com/'
+            },
+            {
+                title: 'Popo',
+                desc: `The programmer who doesn't want to be a good driver is not a good cook. 💫`,
+                logo: 'https://popo706.cn/popo706.github.io/profile.jpg',
+                link: 'https://popo706.cn/'
+            },
+            {
+                title: '黄可锰',
+                desc: 'CALL HIM HUANGKEMENG HE LOVE YOU',
+                logo: 'https://i-tech.tech/img/avatar.jpeg',
+                link: 'https://i-tech.tech/'
+            },
+            // {
+            //     title: 'John',
+            //     desc: 'John Stark',
+            //     logo: 'http://johnzz.top/images/20180828144419.png',
+            //     link: 'http://johnzz.top/'
+            // },
         ],
         blogConfig: {
             category: {
@@ -39,15 +65,45 @@ module.exports = {
         },
         // 侧边栏
         sidebar: 'auto',
-        displayAllHeaders: true,
+        // displayAllHeaders: true,
 
         // 首页相关配置
-        huawei: false,
-        author: '冯忠森',
+        author: 'Sunny',
+        authorAvatar: '/favicons.png',
+        logo: '/favicons.png',
         record: '晋IPC备19007704号-1',
+        recordLink: 'https://beian.miit.gov.cn/',
         startYear: '2016',
     },
     markdown: {
         lineNumbers: true
-    }
+    },
+    plugins: [
+        ['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
+            theme: ['whiteCat', 'blackCat', 'haru1', 'haru2',
+                'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
+            // clean: true,
+        }],
+        ['@vuepress-reco/vuepress-plugin-bgm-player', {
+            autoShrink: true,
+            audios: [{
+                name: '你的姑娘',
+                artist: '隔壁老樊',
+                url: 'http://fblog.top/blog/music/1.mp3',
+                cover: 'https://cdn.fblog.top/blog/music/1.jpg'
+            }, {
+                name: 'Moon River',
+                artist: 'Audrey Hepburn',
+                url: 'https://cdn.fblog.top/blog/music/2.mp3',
+                cover: 'https://cdn.fblog.top/blog/music/2.jpg'
+            }]
+        }],
+        ['vuepress-plugin-dynamic-title', {
+            // showIcon: "/favicon.png",
+            // showText: "(/≧▽≦/)咦！又好了！",
+            // hideIcon: "/failure.png",
+            // hideText: "(●—●)喔哟，崩溃啦！",
+            // recoverTime: 2000
+        }]
+    ]
 }

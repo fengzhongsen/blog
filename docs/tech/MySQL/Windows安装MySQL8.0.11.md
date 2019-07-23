@@ -1,6 +1,6 @@
 ---
 title: 【数据库】Windows 安装 MySQL8.0.11
-date: 2018-06-14 12:00:00
+date: 2018.06.14 12:00:00
 categories:
   - 技术篇
 tags:

@@ -1,6 +1,6 @@
 ---
 title: 【ES5】JavaScript 面试
-date: 2017-07-10 12:00:00
+date: 2017.07.10 12:00:00
 categories:
   - 技术篇
 tags:
@@ -12,6 +12,19 @@ tags:
 :::tip
 这篇博客旨在告诉**初级前端工程师**需要掌握的知识范围，但是不包括基础语法。
 :::
+
+## 一、JavaScript语法重点
+
+### 1.1、数据类型
+基本类型、引用类型、类型转换、*类型检查
+
+### 1.2、数组
+第一类（数据结构）：push、pop、unshift、shift、slice、*splice
+第二类（遍历）：*forEach、*map[ES6]、*reduce、filter、some、every
+第四类（其他）：indexOf、join
+
+### 1.3、函数
+函数、函数表达式、自运行函数、尖头函数[ES6]、构造函数、闭包、arguments
 
 ## 二、JavaScript基础
 

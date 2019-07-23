@@ -1,6 +1,6 @@
 ---
 title: 【Python3】数据类型
-date: 2018-03-08 12:00:00
+date: 2018.03.08 12:00:00
 categories:
   - 技术篇
 tags: 

@@ -1,6 +1,6 @@
 ---
 title: 【ES5】JavaScript 精粹
-date: 2017-07-06 12:00:00
+date: 2017.07.06 12:00:00
 categories:
   - 技术篇
 tags:
