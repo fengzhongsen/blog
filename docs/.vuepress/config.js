@@ -18,7 +18,8 @@ module.exports = {
                 items: [
                     // { text: 'Orican', link: 'https://oricanis.github.io/' },
                     { text: '黄可锰', link: 'https://i-tech.tech/' },
-                    { text: 'John', link: 'http://xzzdll.cn/' }
+                    { text: 'John', link: 'http://xzzdll.cn/' },
+                    { text: 'Popo', link: 'https://popo706.cn/' }
                 ]
             }
         ],
