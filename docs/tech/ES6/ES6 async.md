@@ -1,6 +1,6 @@
 ---
 title: 【ES6】async
-date: 2018-11-20 12:00:00
+date: 2018.11.20 12:00:00
 categories:
   - 技术篇
 tags:

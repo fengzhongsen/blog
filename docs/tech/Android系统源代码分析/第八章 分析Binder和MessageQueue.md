@@ -1,6 +1,6 @@
 ---
 title: 【Android系统源代码分析】第八章 分析Binder和MessageQueue
-date: 2016-02-01 12:00:00
+date: 2016.02.01 12:00:00
 categories:
   - 技术篇
 tags:

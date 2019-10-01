@@ -1,6 +1,6 @@
 ---
 title: 【ES6】Generator
-date: 2018-11-19 12:00:00
+date: 2018.11.19 12:00:00
 categories:
   - 技术篇
 tags:

@@ -1,6 +1,6 @@
 ---
 title: 【Android系统源代码分析】第五章 深入分析HAL层
-date: 2016-01-29 12:00:00
+date: 2016.01.29 12:00:00
 categories:
   - 技术篇
 tags:

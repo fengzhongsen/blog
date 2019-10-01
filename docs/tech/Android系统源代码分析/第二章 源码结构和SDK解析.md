@@ -1,6 +1,6 @@
 ---
 title: 【Android系统源代码分析】第二章 源码结构和SDK解析
-date: 2016-01-26 12:00:00
+date: 2016.01.26 12:00:00
 categories:
   - 技术篇
 tags:

@@ -1,12 +1,13 @@
 module.exports = {
     title: `老冯博客`,
-    description: 'Just Do It !',
+    description: 'Enjoy when you can, and endure when you must.',
     head: [
         ['link', { rel: 'icon', href: '/favicons.png' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
     ],
     theme: 'reco',
     themeConfig: {
+        type: 'blog',
         // 导航
         nav: [
             { text: '主页', link: '/', icon: 'reco-home' },
@@ -14,7 +15,8 @@ module.exports = {
             { text: '简历', link: '/resume/', icon: 'reco-account' },
             { text: 'Github', link: 'https://github.com/fengzhongsen/', icon: 'reco-github' },
             {
-                text: '友情链接',
+                text: '友链',
+                icon: 'reco-other',
                 items: [
                     // { text: 'Orican', link: 'https://oricanis.github.io/' },
                     { text: '黄可锰', link: 'https://i-tech.tech/' },
@@ -40,10 +42,9 @@ module.exports = {
         },
         // 侧边栏
         sidebar: 'auto',
-        displayAllHeaders: true,
+        // displayAllHeaders: true,
 
         // 首页相关配置
-        huawei: false,
         author: '冯忠森',
         record: '晋IPC备19007704号-1',
         startYear: '2016',

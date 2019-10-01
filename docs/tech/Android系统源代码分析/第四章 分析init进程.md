@@ -1,6 +1,6 @@
 ---
 title: 【Android系统源代码分析】第三章 分析JNI和Media
-date: 2016-01-28 12:00:00
+date: 2016.01.28 12:00:00
 categories:
   - 技术篇
 tags:

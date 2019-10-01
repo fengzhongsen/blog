@@ -1,6 +1,6 @@
 ---
 title: 【ES5】JavaScript 面试
-date: 2017-07-10 12:00:00
+date: 2017.07.10 12:00:00
 categories:
   - 技术篇
 tags:

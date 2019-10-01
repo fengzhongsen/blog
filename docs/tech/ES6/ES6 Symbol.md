@@ -1,6 +1,6 @@
 ---
 title: 【ES6】Symbol
-date: 2018-11-17 12:00:00
+date: 2018.11.17 12:00:00
 categories:
   - 技术篇
 tags:

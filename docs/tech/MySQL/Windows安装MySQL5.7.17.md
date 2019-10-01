@@ -1,6 +1,6 @@
 ---
 title: 【数据库】Windows 安装 MySQL5.7.17
-date: 2018-06-13 12:00:00
+date: 2018.06.13 12:59:00
 categories:
   - 技术篇
 tags:

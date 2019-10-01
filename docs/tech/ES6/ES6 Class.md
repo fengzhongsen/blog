@@ -1,6 +1,6 @@
 ---
 title: 【ES6】Class：通过原型创建对象和通过Class创建对象
-date: 2018-11-21 12:00:00
+date: 2018.11.21 12:00:00
 categories:
   - 技术篇
 tags:

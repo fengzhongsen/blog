@@ -1,6 +1,6 @@
 ---
 title: 【Android系统源代码分析】第十章 分析WindowManagerService
-date: 2016-02-03 12:00:00
+date: 2016.02.03 12:00:00
 categories:
   - 技术篇
 tags:

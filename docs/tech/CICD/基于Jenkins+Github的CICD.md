@@ -1,6 +1,6 @@
 ---
 title: 【CI/CD】基于Jenkins+Github的CI/CD
-date: 2019-06-17 00:00:00
+date: 2019.06.17 00:00:00
 categories:
   - 技术篇
 tags:
