@@ -6,7 +6,8 @@ const wxShareInfo = {
 }
 
 function weixinShare({ title, desc, link, imgUrl }) {
-    wx.ready(function () {
+    const wx = window.wx;
+    wx && wx.ready(function () {
         wx.onMenuShareTimeline({//分享到朋友圈
             title,
             link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
