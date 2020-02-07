@@ -98,7 +98,7 @@ myObject = myFunction.apply(myObject, myArray);  // 返回 20
 apply 传入的是一个参数数组，而 call 则作为 call 的参数传入（从第二个参数开始）。
 :::
 
-### 四、闭包
+## 四、闭包
 ```js
 function makeFunc() {
   var name = "Mozilla";
