@@ -12,18 +12,34 @@ module.exports = {
         nav: [
             { text: '主页', link: '/', icon: 'reco-home' },
             { text: '历史', link: '/timeLine/', icon: 'reco-date' },
-            { text: '简历', link: '/resume/', icon: 'reco-account' },
+            { text: '关于', link: '/resume/', icon: 'reco-account' },
             { text: 'Github', link: 'https://github.com/fengzhongsen/', icon: 'reco-github' },
+        ],
+        friendLink: [
             {
-                text: '友链',
-                icon: 'reco-other',
-                items: [
-                    // { text: 'Orican', link: 'https://oricanis.github.io/' },
-                    { text: '黄可锰', link: 'https://i-tech.tech/' },
-                    { text: 'John', link: 'http://xzzdll.cn/' },
-                    { text: 'Popo', link: 'https://popo706.cn/' }
-                ]
-            }
+                title: 'Tony Xu',
+                desc: '我是一名软件工程师，热爱尝试和分享最新科技',
+                logo: 'https://tonyxu.io/images/square-logo.webp',
+                link: 'https://tonyxu.io/zh/'
+            },
+            {
+                title: '午后杂南',
+                desc: 'Enjoy when you can, and endure when you must.',
+                logo: 'https://www.recoluan.com/head.png',
+                link: 'https://www.recoluan.com/'
+            },
+            {
+                title: '黄可锰',
+                desc: 'CALL HIM HUANGKEMENG HE LOVE YOU',
+                logo: 'https://i-tech.tech/img/avatar.jpeg',
+                link: 'https://i-tech.tech/'
+            },
+            {
+                title: 'Popo',
+                desc: `The programmer who doesn't want to be a good driver is not a good cook, I am a software engineer who makes delicious food. I am immersed in the world of code world and are committed to making our world a better place through code. The article frightened the wind and rain, the code shaping made the ghosts cry. 💫`,
+                logo: 'https://popo706.cn/popo706.github.io/profile.jpg',
+                link: 'https://popo706.cn/'
+            },
         ],
         blogConfig: {
             category: {
@@ -46,6 +62,8 @@ module.exports = {
 
         // 首页相关配置
         author: '冯忠森',
+        authorAvatar: '/favicons.png',
+        logo: '/favicons.png',
         record: '晋IPC备19007704号-1',
         startYear: '2016',
     },

@@ -1,25 +1,29 @@
 ---
-title: 冯忠森 - 前端工程师
+title: 专业技能
 isComment: false
 ---
 
-## 基本信息
+<!-- ## 基本信息
 
 <table>
     <tr><td>姓名：冯忠森</td><td>性别：男</td><td>籍贯：山西</td></tr>
     <tr><td>生日：1995年7月</td><td>电话：17600909040</td><td>邮箱：fengzhognsen@qq.com</td></tr>
     <tr><td>学历：本科</td><td>英语：CET-4</td><td>博客：https://fblog.top/</td></tr>
-</table>
+</table> -->
+<div>
 
-## 专业技能
+<audio src="https://assets.smallsunnyfox.com/music/2.mp3">
+afdjakfk</audio></div>
+
+<!-- ## 专业技能 -->
 ### 前端
 1. 熟悉 JavaScript / HTML5 / CSS3，ES5 / ES6。
-2. 熟悉 Vue、Vue-router、Vuex、axios 以及 ElementUI、EChart、zeptojs 等。
+2. 熟悉 Vue、Vue-router、Vuex、axios 以及 ElementUI、Vant、EChart、zeptojs 等。
 3. 熟悉 React、ReactNative 以及 Antd 等。
-4. 熟悉前端打包工具 webpack、gulp 以及包管理工具 npm、yarn 等。
-5. 了解 Canves、SVG、Sass。
-6. 熟悉浏览器渲染机制，有前端优化经验。
-7. 有微信小程序开发经验。
+4. 熟悉 微信小程序，Taro 框架。
+5. 熟悉前端打包工具 webpack、gulp 以及包管理工具 npm、yarn 等。
+6. 了解 Canves、SVG、Sass、Less。
+7. 熟悉浏览器渲染机制，有前端优化经验。
 8. 有基于 Jenkins + GitHub 的 CI/CD 经验。
 
 ### 服务端
@@ -33,7 +37,7 @@ isComment: false
 3. 了解基本的数据结构和算法知识。
 4. 熟悉 Markdown 语法，良好的文档书写能力。
 
-## 工作经历
+<!-- ## 工作经历
 ### 全职
 #### 1、北京小米移动软件有限公司（小米）2019.08 ～ 至今 前段工程师
 行业：新零售<br>
@@ -99,4 +103,4 @@ isComment: false
 3. [老冯博客](http://fblog.top/) 个人博客
 
 ## 自我评价
-我不仅仅是前端工程师，学习能力强、学习热情高、注重代码质量
+我不仅仅是前端工程师，学习能力强、学习热情高、注重代码质量 -->
