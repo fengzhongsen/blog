@@ -49,7 +49,9 @@ $ whereis git
 
 ### 2.2 安装 Jenkins
 
-`Jenkins` 依赖 `jdk`，所以需要先[在CentOS7上安装Java8](/tech/在CentOS7上安装Java8)，再继续下列步骤。
+`Jenkins` 依赖 `jdk`，所以需要先[在CentOS7上安装Java8](/tech/Linux/在CentOS7上安装Java8)，再继续下列步骤。
+
+#### 方法一（太慢了）
 
 1. 安装自动选择最快源的插件
 ```
@@ -68,7 +70,24 @@ $ yum install jenkins -y
 ```
 $ service jenkins start
 ```
-5. 安装 `Jenkins` 插件
+
+#### 方法二（国内镜像安装）
+1. [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
+```
+wget https://mirrors.tuna.tsinghua.edu.cn/jenkins/redhat/jenkins-2.233-1.1.noarch.rpm
+rpm -ivh jenkins-2.233-1.1.noarch.rpm
+```
+2. 启动
+```
+# 检查Jenkins服务状态
+sudo systemctl status jenkins
+# 设置为开机自启动
+sudo systemctl enable jenkins
+# 启动Jenkins服务
+sudo systemctl start jenkins
+```
+
+3. 安装 `Jenkins` 插件
 ::: warning
 这里你可能会遇到一些问题，Jenkins 默认端口是 8080，但阿里云默认不开启 8080 端口，需要手动添加。
 
