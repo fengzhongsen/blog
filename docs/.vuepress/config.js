@@ -19,7 +19,7 @@ module.exports = {
             {
                 title: 'Tony Xu',
                 desc: '我是一名软件工程师，热爱尝试和分享最新科技',
-                logo: 'https://tonyxu.io/images/square-logo.webp',
+                // logo: 'https://tonyxu.io/images/square-logo.webp',
                 link: 'https://tonyxu.io/zh/'
             },
             {
@@ -28,15 +28,15 @@ module.exports = {
                 logo: 'https://www.recoluan.com/head.png',
                 link: 'https://www.recoluan.com/'
             },
-            {
-                title: '黄可锰',
-                desc: 'CALL HIM HUANGKEMENG HE LOVE YOU',
-                logo: 'https://i-tech.tech/img/avatar.jpeg',
-                link: 'https://i-tech.tech/'
-            },
+            // {
+            //     title: '黄可锰',
+            //     desc: 'CALL HIM HUANGKEMENG HE LOVE YOU',
+            //     logo: 'https://i-tech.tech/img/avatar.jpeg',
+            //     link: 'https://i-tech.tech/'
+            // },
             {
                 title: 'Popo',
-                desc: `The programmer who doesn't want to be a good driver is not a good cook, I am a software engineer who makes delicious food. I am immersed in the world of code world and are committed to making our world a better place through code. The article frightened the wind and rain, the code shaping made the ghosts cry. 💫`,
+                desc: `The programmer who doesn't want to be a good driver is not a good cook. 💫`,
                 logo: 'https://popo706.cn/popo706.github.io/profile.jpg',
                 link: 'https://popo706.cn/'
             },
@@ -61,13 +61,42 @@ module.exports = {
         // displayAllHeaders: true,
 
         // 首页相关配置
-        author: '冯忠森',
+        author: 'Sunny',
         authorAvatar: '/favicons.png',
         logo: '/favicons.png',
         record: '晋IPC备19007704号-1',
+        recordLink: 'http://www.beian.miit.gov.cn',
         startYear: '2016',
     },
     markdown: {
         lineNumbers: true
-    }
+    },
+    plugins: [
+        ['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
+            theme: ['whiteCat', 'blackCat', 'haru1', 'haru2',
+                'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
+            clean: true,
+        }],
+        ['@vuepress-reco/vuepress-plugin-bgm-player', {
+            autoShrink: true,
+            audios: [{
+                name: '강남역 4번 출구',
+                artist: 'Plastic / Fallin` Dild',
+                url: 'https://assets.smallsunnyfox.com/music/2.mp3',
+                cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+            }, {
+                name: '用胳膊当枕头',
+                artist: '최낙타',
+                url: 'https://assets.smallsunnyfox.com/music/3.mp3',
+                cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
+            }]
+        }],
+        ['vuepress-plugin-dynamic-title', {
+            // showIcon: "/favicon.png",
+            // showText: "(/≧▽≦/)咦！又好了！",
+            // hideIcon: "/failure.png",
+            // hideText: "(●—●)喔哟，崩溃啦！",
+            // recoverTime: 2000
+        }]
+    ]
 }
