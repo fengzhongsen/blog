@@ -18,7 +18,7 @@ tags:
 <html>
 <head></head>
 <body>
-    <svg id="mysvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet">
+    <svg id="mysvg" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet">
         <circle id="mycircle" cx="400" cy="300" r="50" />
     </svg>
 </body>
@@ -236,9 +236,8 @@ A = elliptical Arc // A rx ry x-axis-rotation large-arc-flag sweep-flag x y (OR 
 ### 2.11 复制标签`<use>`
 
 > `<use>`标签用于复制一个形状。
-
 ```html
-<svg viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 30 10" xmlns="https://www.w3.org/2000/svg">
   <circle id="myCircle" cx="5" cy="5" r="4"/>
 
   <use href="#myCircle" x="10" y="0" fill="blue" />
@@ -371,7 +370,7 @@ repeatCount：动画的循环模式。
 </head>
 
 <body>
-    <svg id="mysvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet">
+    <svg id="mysvg" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet">
         <circle id="mycircle" cx="400" cy="300" r="50" />
     </svg>
     <script>

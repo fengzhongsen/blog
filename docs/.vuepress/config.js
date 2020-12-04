@@ -89,7 +89,7 @@ module.exports = {
             audios: [{
                 name: '你的姑娘',
                 artist: '隔壁老樊',
-                url: 'http://cdn.fblog.top/blog/music/1.mp3',
+                url: 'https://cdn.fblog.top/blog/music/1.mp3',
                 cover: 'https://cdn.fblog.top/blog/music/1.jpg'
             }, {
                 name: 'Moon River',
