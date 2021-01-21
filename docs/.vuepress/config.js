@@ -14,7 +14,7 @@ module.exports = {
     // 导航
     nav: [
       { text: '主页', link: '/', icon: 'reco-home' },
-      { text: '历史', link: '/timeLine/', icon: 'reco-date' },
+      { text: '时间轴', link: '/timeLine/', icon: 'reco-date' },
       { text: '关于', link: '/resume/', icon: 'reco-account' },
       { text: 'Github', link: 'https://github.com/fengzhongsen/', icon: 'reco-github' },
     ],
