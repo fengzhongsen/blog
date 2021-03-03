@@ -1,11 +1,10 @@
 ---
-title: 【CI/CD】基于Jenkins+Github的CI/CD
+title: 基于Jenkins+Github的CI/CD
 date: 2019.06.17 00:00:00
 categories:
-  - 技术篇
+  - 运维
 tags:
   - CI/CD
-  - Jenkins
 ---
 
 ## 一、引言

@@ -1,11 +1,10 @@
 ---
-title: 【数据库】数据库设计
+title: 数据库设计
 date: 2019.04.23 22:59:00
 categories:
-  - 技术篇
+  - 后端
 tags:
   - 数据库
-  - MySQL
 ---
 
 <img src="https://cdn.fblog.top/blog/images/db/db-01.png">

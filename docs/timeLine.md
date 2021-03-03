@@ -4,4 +4,4 @@ sidebar: false
 isComment: false
 ---
 
-## 创作历史
+## 归纳

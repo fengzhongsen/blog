@@ -1,10 +1,9 @@
 ---
-title: 【SVG】初识SVG
+title: 初识SVG
 date: 2019.06.14 12:00:00
 categories:
-  - 技术篇
-tags: 
   - 前端
+tags:
   - SVG
 ---
 

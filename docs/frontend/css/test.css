@@ -1,0 +1,67 @@
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes animation {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  30% {
+    top: 50px;
+  }
+
+  68%,
+  72% {
+    left: 50px;
+  }
+
+  100% {
+    top: 100px;
+    left: 100%;
+  }
+}
+
+.animation {
+  /* @keyframes duration | timing-function | delay |
+   iteration-count | direction | fill-mode | play-state | name */
+  animation: 3s ease-in 1s 2 reverse both paused slidein;
+
+  /* @keyframes duration | timing-function | delay | name */
+  animation: 3s linear 1s slidein;
+
+  /* @keyframes duration | name */
+  animation: 3s slidein;
+
+  animation-duration: 6s;
+  animation-duration: 6000ms;
+
+  /* Keyword values */
+  animation-timing-function: ease;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
+  animation-timing-function: step-start;
+  animation-timing-function: step-end;
+
+  /* Function values */
+  animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  animation-timing-function: steps(4, end);
+  animation-timing-function: frames(10);
+
+  /* Multiple animations */
+  animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
+  /* Global values */
+  animation-timing-function: inherit;
+  animation-timing-function: initial;
+  animation-timing-function: unset;
+}

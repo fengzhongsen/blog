@@ -1,16 +1,18 @@
 ---
-title: 【CSS】Flex布局语法汇总
+title: CSS 弹性布局 flex
 date: 2018.02.16 12:00:00
 categories:
-  - 技术篇
-tags:
   - 前端
+tags:
   - CSS
 ---
-### 前言：Flex 布局分为多个版本，以下为最新版本语法汇总。
->其中注释所示皆假设主轴为水平方向，且从左到右。
 
-```
+::: tip
+Flex 布局分为多个版本，以下为最新版本语法汇总。
+其中注释所示皆假设主轴为水平方向，且从左到右。
+:::
+
+```css
 /* Flex 布局 属性 总结 */
 .box {
     display: flex;                    /* 弹性布局 */
@@ -67,5 +69,7 @@ tags:
     align-self: baseline;              /* 与 align-items 一致 */
     align-self: stretch;               /* 与 align-items 一致 */
 }
-
 ```
+
+## 参考
+[Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)

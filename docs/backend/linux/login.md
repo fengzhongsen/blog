@@ -1,8 +1,8 @@
 ---
-title: 【Linux】在本地登录远程服务器
+title: 在本地登录远程服务器
 date: 2019.06.15 12:00:00
 categories:
-  - 技术篇
+  - 运维
 tags: 
   - Linux
 ---
