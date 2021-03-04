@@ -1,6 +1,6 @@
 ---
-title: CSS 定位属性 position
-date: 2021.03.04 20:00:00
+title: CSS Position
+date: 2021.03.02 20:00:00
 categories:
   - 前端
 tags:
@@ -32,5 +32,5 @@ tags:
 从父元素继承 position 属性的值。
 
 ## 参考
-1. [position](https://developer.mozilla.org/zh-CN/docs/Web/CSS/position)
+1. [MDN - position](https://developer.mozilla.org/zh-CN/docs/Web/CSS/position)
 2. [CSS position(定位)属性](https://www.cnblogs.com/guolao/p/9048308.html)

@@ -1,6 +1,6 @@
 ---
-title: CSS 块格式化上下文 BFC
-date: 2021.03.05 20:00:00
+title: CSS BFC
+date: 2021.03.02 21:00:00
 categories:
   - 前端
 tags:
@@ -262,5 +262,5 @@ html标签或者设置了一下任一属性的其他元素将具备BFC特性。
 </div>
 
 ## 四、参考
-1. [块格式化上下文](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)
+1. [MDN - 块格式化上下文](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)
 2. [10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647)

@@ -1,6 +1,6 @@
 ---
 title: CSS3 Animation
-date: 2021.03.02 20:00:00
+date: 2021.03.03 22:00:00
 categories:
   - 前端
 tags:
@@ -246,5 +246,5 @@ animation-name: unset
 ```
 
 ## 参考
-1. [CSS Animations](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Animations)
+1. [MDN - CSS Animations](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Animations)
 2. [Animate.css](https://animate.style/)

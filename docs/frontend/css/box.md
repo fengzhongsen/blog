@@ -36,6 +36,6 @@ box-sizing: border-box; /* IE盒模型 */
 ```
 
 ## 四、参考
-1. [CSS 基础框盒模型介绍](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+1. [MDN - CSS 基础框盒模型介绍](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 2. [box-sizing](https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing)
 3. [css的两种盒模型](https://blog.csdn.net/zwkkkk1/article/details/79678177)
