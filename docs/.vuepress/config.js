@@ -15,7 +15,7 @@ module.exports = {
     nav: [
       { text: '主页', link: '/', icon: 'reco-home' },
       { text: '归纳', link: '/timeLine/', icon: 'reco-date' },
-      // { text: '关于', link: '/resume/', icon: 'reco-account' },
+      { text: '关于', link: '/me/', icon: 'reco-account' },
       { text: 'Github', link: 'https://github.com/fengzhongsen/', icon: 'reco-github' },
     ],
     friendLink: [

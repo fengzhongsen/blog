@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>冯忠森 - 前端工程师</title>
+  <style>
+    body {
+      background-color: aliceblue;
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    ol,
+    ul {
+      margin-block-start: 0.2em;
+      margin-block-end: 0.2em;
+      padding-inline-start: 30px;
+    }
+
+    #root {
+      box-sizing: border-box;
+      width: 820px;
+      min-height: 1150px;
+      padding: 20px 45px 30px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .col {
+      width: 260px;
+    }
+
+    h3 {
+      color: #000;
+      border-bottom: 1px solid #254665;
+    }
+
+    strong {
+      color: #000;
+    }
+
+    .title {
+      color: #000;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+
+    .item {
+      display: flex;
+    }
+
+    .item div:last-child {
+      flex: 1;
+    }
+
+    #base section,
+    #works section {
+      margin-left: 10px;
+    }
+
+    #job row strong:nth-child(1) {
+      width: 360px;
+    }
+
+    #job row strong:nth-child(2) {
+      flex: 1;
+      text-align: center;
+    }
+
+    #job row strong:nth-child(3) {
+      width: 150px;
+      text-align: right;
+    }
+
+    .page {
+      margin-top: 150px;
+    }
+
+    #downland {
+      width: 100px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: burlywood;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 100px;
+      right: 100px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <header>
+      <h2>冯忠森 - 前端工程师</h2>
+    </header>
+
+    <section id="base">
+      <header>
+        <h3>基本信息</h3>
+      </header>
+      <section>
+        <row>
+          <span class="col"><strong>性别：</strong>男</span>
+          <span class="col"><strong>籍贯：</strong>山西</span>
+          <span class="col"><strong>生日：</strong>1995年7月</span>
+        </row>
+        <row>
+          <span class="col"><strong>电话：</strong>17600909040</span>
+          <span class="col"><strong>邮箱：</strong><a href="mailto:fengzhongsen@qq.com">fengzhongsen@qq.com</a></span>
+          <span class="col"><strong>主页：</strong><a href="https://fblog.top/"
+              target="_block">https://fblog.top/</a></span>
+        </row>
+      </section>
+    </section>
+
+    <section id="edu">
+      <header>
+        <h3>教育背景</h3>
+      </header>
+      <section>
+        <row class="item">
+          <strong>【本科】上海应用技术大学</strong>
+          <strong>软件工程</strong>
+          <strong>2013.09 ~ 2017.06</strong>
+        </row>
+        <ul>
+          <li>
+            <row class="item">
+              <div><strong>主修课程：</strong></div>
+              <div>数据结构与算法、计算机网络、面向对象程序设计、线性代数、离散数学、软件测试、项目管理等</div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>主要奖励：</strong></div>
+              <div>上海市优秀毕业生 (2017)、优秀学生 (2015、2016)、国家励志奖学金 (2015)、优秀奖学金 (若干)</div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>英语水平：</strong></div>
+              <div>GET-4</div>
+            </row>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="skill">
+      <header>
+        <h3>专业技能</h3>
+      </header>
+      <ol>
+        <li>熟练掌握 JavaScript、HTML、CSS、Canvas、HTTP、性能优化等前端技术。</li>
+        <li>深入了解 Vue、Vue-router、Vuex、axios 等原理。</li>
+        <li>熟悉 React、React native 等技术。</li>
+        <li>熟悉 微信小程序开发，有原生小程序和 Taro 框架开发经验。</li>
+        <li>熟悉 webpack、gulp、npm、yarn、Sass、Less 等。</li>
+        <li>熟悉 Linux/Unix 开发环境，熟练使用命令行，可以编写简单的 shell 脚本。</li>
+        <li>熟练使用 git、nginx 等。</li>
+        <li>了解 Egg、Express 等 Node 框架。</li>
+        <li>有 Java 开发经验，熟悉 mysql 。</li>
+      </ol>
+    </section>
+
+    <section id="job">
+      <header>
+        <h3>工作经历</h3>
+      </header>
+      <section>
+        <row class="title">
+          <strong>【全职】北京小米移动软件有限公司 - 有品电商部</strong>
+          <strong>前端工程师</strong>
+          <strong>2019.08 ~ 至今</strong>
+        </row>
+        <ol>
+          <li>参与有品有鱼业务迭代，负责客户端的跨端开发以及运营系统维护。</li>
+          <li>维护公共业务层框架、公共工具库、公共组件库等。</li>
+        </ol>
+      </section>
+      <section>
+        <row class="title">
+          <strong>【全职】上海一条网络科技有限公司 - 电商部</strong>
+          <strong>前端工程师</strong>
+          <strong>2017.11 ~ 2019.06</strong>
+        </row>
+        <ol>
+          <li>负责运营管理系统的重构、公共组件库封装、Axios 公共能力封装，以及电商H5端的研发和维护。</li>
+          <li>制定前端开发规范，推动技术分享交流。</li>
+        </ol>
+      </section>
+      <section>
+        <row class="title">
+          <strong>【创业】上海峤荣网络科技有限公司（购书云）</strong>
+          <strong>前端工程师、联合创始人</strong>
+          <strong>2017.02 ~ 2017.09</strong>
+        </row>
+        <ol>
+          <li>参与需求研讨、系统设计。</li>
+          <li>负责两个 ToB 的后台系统（微信助手、淘宝助手），以及微信小程序的研发。</li>
+        </ol>
+      </section>
+    </section>
+
+    <section id="project">
+      <header>
+        <h3>项目经验</h3>
+      </header>
+      <section>
+        <row class="title">
+          <strong>【小米】有品有鱼会员电商</strong>
+        </row>
+        <ul>
+          <li>
+            <row class="item">
+              <div><strong>研发周期：</strong></div>
+              <div>长期</div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>项目简述：</strong></div>
+              <div>有鱼是由社交驱动的会员制电商平台，隶属于小米有品。客户端有 Android、iOS、微信小程序、H5。</div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>职责描述：</strong></div>
+              <div>负责各客户端新功能研发、小程序技术选型与研发、工具脚本研发、公共业务框架维护、公共组件封装、运营系统改造升级等。</div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>技术选型：</strong></div>
+              <div>React、Antd、React Native、Taro、umijs 等。</div>
+            </row>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <row class="title">
+          <strong>【一条】运营系统重构</strong>
+        </row>
+        <ul>
+          <li>
+            <row class="item">
+              <div><strong>研发周期：</strong></div>
+              <div>三个月</div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>项目简述：</strong></div>
+              <div>公司运营系统从 AngularJS 升级到 Vue，业务梳理与技术革新并行，协同服务端同事对部分细节进行优化重构。</div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>职责描述：</strong></div>
+              <div>独立完成整个前端项目的搭建、<strong>组件拆解封装</strong>、<strong>Axios 封装</strong>，实现 <strong>可拖拽操作</strong>，运用
+                <strong>alasql</strong> 在前端处理数据 等。
+              </div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>技术选型：</strong></div>
+              <div>Vue、ElementUI、Sortable、alasql 等。</div>
+            </row>
+          </li>
+        </ul>
+      </section>
+      <article>
+        <row class="title">
+          <strong>【购书云】购书云创业项目</strong>
+        </row>
+        <ul>
+          <li>
+            <row class="item">
+              <div><strong>研发周期：</strong></div>
+              <div>八个月</div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>项目简述：</strong></div>
+              <div>购书云为二手书商家提供一站式解决方案。为商家提供运营系统（“微信助手”）和公众号（或者小程序）配套使用，此外为了满足商家同步淘宝店铺库存而研发了“淘宝助手”。涉及了
+                <strong>数据可视化</strong>、<strong>前端 Excel 可视化修改</strong>、报表导出、订单打印、批量异步上传等场景。
+              </div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>职责描述：</strong></div>
+              <div>参与需求研讨，主导微信助手和淘宝助手的前端研发，参与小程序研发。</div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>技术选型：</strong></div>
+              <div>Vue、ElementUI、EChart、xlsx 等。</div>
+            </row>
+          </li>
+          <li>
+            <row class="item">
+              <div><strong>项目成果：</strong></div>
+              <div>微信助手上线第一周最高日销售额10W+，上线3个月9家书上使用，其中3家商户月销售额20W+。2、淘宝助手自2018年起开始盈利，截至2012年2月18日，注册商家达 212
+                个，记录库存 202 万条，出库图书 142 万本。</div>
+            </row>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="works">
+      <header>
+        <h3>作品展示</h3>
+      </header>
+      <ol>
+        <li>购书云官网：<a href="http://www.goushuyun.com/" target="_block">http://www.goushuyun.com/</a> 图书行业一站式解决方案</li>
+        <li>一条生活馆：<a href="https://h5.yit.com/" target="_block">https://h5.yit.com/</a> 汇聚全球良品的生活方式电商</li>
+      </ol>
+    </section>
+  </div>
+
+  <div id="downland" onclick="getPdf()">下载PDF</div>
+
+  <script src="./html2canvas.min.js"></script>
+  <script src="./jspdf.umd.min.js"></script>
+  <script>
+    function getPdf() {
+      var title = document.title;
+      const root = document.querySelector('#root');
+      window.scrollTo(0, 0);
+      root.querySelector('#project').classList.add('page');
+      html2canvas(root, {
+        allowTaint: true
+      }).then(canvas => {
+        let contentWidth = canvas.width
+        let contentHeight = canvas.height
+        let pageHeight = contentWidth / 592.28 * 841.89
+        let leftHeight = contentHeight
+        let position = 0
+        let imgWidth = 595.28
+        let imgHeight = 592.28 / contentWidth * contentHeight
+        let pageData = canvas.toDataURL('image/jpeg', 1.0)
+        let PDF = new jspdf.jsPDF('', 'pt', 'a4')
+        if (leftHeight < pageHeight) {
+          PDF.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight)
+        } else {
+          while (leftHeight > 0) {
+            PDF.addImage(pageData, 'JPEG', 0, position, imgWidth, imgHeight)
+            leftHeight -= pageHeight
+            position -= 841.89
+            if (leftHeight > 0) {
+              PDF.addPage()
+            }
+          }
+        }
+        PDF.save(title + '.pdf')
+      })
+    }
+  </script>
+</body>
+
+</html>
