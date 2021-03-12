@@ -5,7 +5,6 @@ categories:
   - 前端
 tags:
   - JavaScript
-  - ES6
 ---
 
 ## 一、let 与 const

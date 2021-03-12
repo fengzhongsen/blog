@@ -1,7 +1,7 @@
 ---
 isTimeLine: true
 sidebar: false
-isComment: false
+isShowComments: false
 ---
 
-## 归纳
+## Time Line

@@ -14,15 +14,15 @@ module.exports = {
     // 导航
     nav: [
       { text: '主页', link: '/', icon: 'reco-home' },
-      { text: '时间轴', link: '/timeLine/', icon: 'reco-date' },
-      { text: '关于', link: '/resume/', icon: 'reco-account' },
+      { text: '归纳', link: '/timeLine/', icon: 'reco-date' },
+      // { text: '关于', link: '/resume/', icon: 'reco-account' },
       { text: 'Github', link: 'https://github.com/fengzhongsen/', icon: 'reco-github' },
     ],
     friendLink: [
       {
         title: 'Tony Xu',
         desc: '我是一名软件工程师，热爱尝试和分享最新科技',
-        // logo: 'https://tonyxu.io/images/square-logo.webp',
+        logo: 'https://tonyxu.io/images/square-logo.webp',
         link: 'https://tonyxu.io/zh/'
       },
       {
