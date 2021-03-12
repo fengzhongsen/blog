@@ -2,7 +2,7 @@
 title: JavaScript
 date: 2021.03.05 20:00:00
 categories:
-  - 前端
+  - FrontEnd
 tags:
   - JavaScript
 ---

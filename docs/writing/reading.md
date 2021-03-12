@@ -3,9 +3,9 @@ title: 致即将加入爱阅读的学弟学妹
 date: 2017.07.18 00:54:59
 sidebar: false
 categories:
-  - 文学
+  - Literature
 tags:
-  - 写作
+  - Writing
 sticky: 2
 ---
 

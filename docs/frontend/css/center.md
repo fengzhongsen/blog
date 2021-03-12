@@ -2,7 +2,7 @@
 title: CSS 居中布局
 date: 2021.03.01 21:00:00
 categories:
-  - 前端
+  - FrontEnd
 tags:
   - CSS
 ---

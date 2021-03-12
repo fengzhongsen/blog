@@ -13,9 +13,9 @@ module.exports = {
     mode: 'light',
     // 导航
     nav: [
-      { text: '主页', link: '/', icon: 'reco-home' },
-      { text: '归纳', link: '/timeLine/', icon: 'reco-date' },
-      { text: '关于', link: '/me/', icon: 'reco-account' },
+      { text: 'Home', link: '/', icon: 'reco-home' },
+      { text: 'TimeLine', link: '/timeLine/', icon: 'reco-date' },
+      { text: 'About', link: 'https://fblog.top/me/', icon: 'reco-account' },
       { text: 'Github', link: 'https://github.com/fengzhongsen/', icon: 'reco-github' },
     ],
     friendLink: [
@@ -52,12 +52,12 @@ module.exports = {
     ],
     blogConfig: {
       category: {
-        location: 2,     // 在导航栏菜单中所占的位置，默认2
-        text: '分类' // 默认文案 “分类”
+        location: 2, // 在导航栏菜单中所占的位置，默认2
+        text: 'Category' // 默认文案 “分类”
       },
       tag: {
-        location: 3,     // 在导航栏菜单中所占的位置，默认3
-        text: '标签'      // 默认文案 “标签”
+        location: 3, // 在导航栏菜单中所占的位置，默认3
+        text: 'Tag' // 默认文案 “标签”
       }
     },
     // 评论

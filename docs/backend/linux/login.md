@@ -2,7 +2,7 @@
 title: 在本地登录远程服务器
 date: 2019.06.15 12:00:00
 categories:
-  - 运维
+  - Operation
 tags: 
   - Linux
 ---

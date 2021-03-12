@@ -119,7 +119,7 @@
         </row>
         <row>
           <span class="col"><strong>电话：</strong>17600909040</span>
-          <span class="col"><strong>邮箱：</strong><a href="mailto:fengzhongsen@qq.com">fengzhongsen@qq.com</a></span>
+          <span class="col"><strong>邮箱：</strong><a href="mailto:fengzhongsen@qq.com" target="_block">fengzhongsen@qq.com</a></span>
           <span class="col"><strong>主页：</strong><a href="https://fblog.top/"
               target="_block">https://fblog.top/</a></span>
         </row>
@@ -342,7 +342,7 @@
   <script src="./jspdf.umd.min.js"></script>
   <script>
     function getPdf() {
-      var title = document.title;
+      const title = document.title;
       const root = document.querySelector('#root');
       window.scrollTo(0, 0);
       root.querySelector('#project').classList.add('page');

@@ -2,7 +2,7 @@
 title: ES6 笔记
 date: 2018.11.22 12:00:00
 categories:
-  - 前端
+  - FrontEnd
 tags:
   - JavaScript
 ---

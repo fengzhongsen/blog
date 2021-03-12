@@ -2,7 +2,7 @@
 title: CSS Flex
 date: 2018.02.16 12:00:00
 categories:
-  - 前端
+  - FrontEnd
 tags:
   - CSS
 ---

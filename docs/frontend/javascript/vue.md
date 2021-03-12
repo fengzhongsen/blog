@@ -2,7 +2,7 @@
 title: Vue
 date: 2021.03.06 20:00:00
 categories:
-  - 前端
+  - FrontEnd
 tags:
   - Vue
 ---

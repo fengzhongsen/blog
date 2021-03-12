@@ -2,7 +2,7 @@
 title: CSS 盒模型
 date: 2021.03.01 20:00:00
 categories:
-  - 前端
+  - FrontEnd
 tags:
   - CSS
 ---
