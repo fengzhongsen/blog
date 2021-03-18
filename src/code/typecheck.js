@@ -1,3 +1,8 @@
+/**
+ * 类型检查
+ * 来自 Axios 源码库
+ */
+
 const toString = Object.prototype.toString;
 
 function isUndefined(val) {

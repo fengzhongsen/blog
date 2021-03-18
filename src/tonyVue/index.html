@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tony Vue</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>{{msg}}</h1>
+    <input v-model="msg" type="text" />
+    <button v-on:click="handleClick">v-on:handleClick</button>
+    <button @click="handleClick">@handleClick</button>
+  </div>
+  <script src="./vue.js"></script>
+  <script>
+    const vm = new Vue({
+      el: '#app',
+      data: {
+        msg: 'hello world'
+      },
+      methods: {
+        handleClick() {
+          this.msg = new Date().getTime();
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,4 +1,8 @@
-// 快速排序
+/**
+ * 快速排序
+ * @param {Array} arr 
+ * @returns 
+ */
 function quickSort(arr) {
   if (arr.length === 0) {
     return;

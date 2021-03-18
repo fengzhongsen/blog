@@ -60,8 +60,8 @@ class MyPromise {
     })
   }
 
-  static race() {
-    return new MyPromise((promises, reject) => {
+  static race(promises) {
+    return new MyPromise((resolve, reject) => {
       for (let i = 0; i < promises.length; i++) {
         const promise = promises[i];
         promise.then(resolve).catch(reject);

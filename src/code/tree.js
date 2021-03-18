@@ -1,3 +1,7 @@
+/**
+ * 二叉树
+ */
+
 // 节点
 class Node {
   constructor(data, left = null, right = null) {
