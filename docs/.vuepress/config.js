@@ -2,7 +2,6 @@ module.exports = {
   title: `Sunny`,
   description: '我有故人抱剑去 斩尽春风未肯归',
   head: [
-
     ['link', { rel: "apple-touch-icon", sizes: "57x57", href: "https://cdn.fblog.top/favicons/apple-icon-57x57.png" }],
     ['link', { rel: "apple-touch-icon", sizes: "60x60", href: "https://cdn.fblog.top/favicons/apple-icon-60x60.png" }],
     ['link', { rel: "apple-touch-icon", sizes: "72x72", href: "https://cdn.fblog.top/favicons/apple-icon-72x72.png" }],
@@ -17,6 +16,9 @@ module.exports = {
     ['link', { rel: "icon", type: "image/png", sizes: "96x96", href: "https://cdn.fblog.top/favicons/favicon-96x96.png" }],
     ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "https://cdn.fblog.top/favicons/favicon-16x16.png" }],
     // ['link', { rel: 'icon', href: 'https://cdn.fblog.top/blog/images/favicons.png' }],
+    ['link', { rel: "manifest", href: "/manifest.json" }],
+    ['meta', { name: "msapplication-TileColor", content: "#ffffff" }],
+    ['meta', { name: "msapplication-TileImage", content: "https://cdn.fblog.top/favicons/ms-icon-144x144.png" }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ['script', { src: './wpa.js', defer: true }],
     // ['script', { src: 'https://cdn.fblog.top/blog/animationFrame.js', defer: true }],

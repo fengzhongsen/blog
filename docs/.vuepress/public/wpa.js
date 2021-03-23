@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js")
+    navigator.serviceWorker.register("./service-worker.js")
       .then(registration => {
         registration.onupdatefound = () => {
           console.log('Service Worker 注册成功');

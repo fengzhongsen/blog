@@ -14,10 +14,10 @@ Copyright 2015, 2019, 2020, 2021 Google LLC. All Rights Reserved.
 // Incrementing OFFLINE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 const OFFLINE_VERSION = 1;
-const CACHE_NAME = "offline";
+const CACHE_NAME = "fblog";
 // Customize this with a different URL if needed.
-const OFFLINE_URL = "index.html";
-const URLS = ['/', '/index.html'];
+const OFFLINE_URL = "/index.html";
+// const URLS = ['/', '/index.html'];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
