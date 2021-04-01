@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://cdn.fblog.top/blog/images/favicons.png">
-  <title>冯忠森-前端工程师-4年经验</title>
+  <title>简历-冯忠森-前端工程师-4年经验</title>
   <style>
     body {
       background-color: aliceblue;
@@ -100,6 +100,7 @@
       top: 100px;
       right: 100px;
       cursor: pointer;
+      color: #333;
     }
   </style>
 </head>
@@ -381,11 +382,15 @@
     </section>
   </div>
 
-  <div id="downland" onclick="getPdf()">下载PDF</div>
+  <a href="./简历-冯忠森-前端工程师-4年经验.pdf" target="_blank"><div id="downland">下载PDF</div></a>
 
   <script src="./html2canvas.min.js"></script>
   <script src="./jspdf.umd.min.js"></script>
   <script>
+    function downland() {
+      const title = document.title;
+
+    }
     function getPdf() {
       const title = document.title;
       const root = document.querySelector('#root');
