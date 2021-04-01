@@ -67,6 +67,7 @@ ReactDOM.render(
 
 ::: tip
 ### `static getDerivedStateFromProps(props, state)`
+
 1. 接收两个参数分别代表来自父组件的`props`和自身的`state`，使用`props`来派生/更新`state`
 2. 返回值之所以不可或缺，因为 React 需要用这个返回值来派生/更新组件的`state`。返回值对`state`的更新动作并非“覆盖”式的，而是针对某个属性的定向更新
 3. 静态方法，内部不能访问 `this`
@@ -75,6 +76,7 @@ ReactDOM.render(
 
 ::: tip
 ### `getSnapshotBeforeUpdate(prevProps, prevState)`
+
 1. 执行时机是在`render()`方法之后，真实 DOM 更新之前，可以同时获取到更新前的真实DOM和更新后的`state``props`信息
 2. 返回值会作为第三个参数给到`componentDidUpdate(prevProps, prevState, valueFromSnapshot)`
 3. 要想发挥作用，必须配合`componentDidUpdate()`使用
@@ -109,14 +111,17 @@ ReactDOM.render(
 ## 5.1 类组件和函数组件
 
 ### 类组件
+
 1. 面向对象编程
 2. 重
 
 ### 函数组件
+
 1. 函数式编程
 2. 轻
 
 ### 差异
+
 1. 类组件需要继承 class，函数组件不能
 2. 类组件可以访问生命周期方法，函数组件不能
 3. 类组件可以获取到实例化后的 this，并基于这个this做各种事情，二函数组件不能
@@ -124,22 +129,26 @@ ReactDOM.render(
 5. ......
 
 ## React-Hooks
+
 1. 函数组件会捕获 render 内部的状态，这是两类组件最大的不同。所以函数组件更符合React的设计理念
 2. React-Hooks 强化了函数组件的能力，帮助函数组件补全了生命周期、`state`管理等能力
 3. 可以灵活定制
 
 ### 为什么选择 React-Hooks
+
 1. 告别难以理解的 Class。比如 this 和 生命周期函数
 2. 解决业务逻辑难以拆分的问题。比如在class组件里，订阅和卸载订阅这一组逻辑会分布在didMound 和 willUnmount 两个生命周期中。useEffect 则可以分组放在一起
 3. 使状态逻辑复用变得简单可行
 4. 函数组件设计思想上来看，更加契合React的理念
 
 ### 局限性
+
 1. 尚未补齐类组件的全部能力，比如 getSnapshotBeforeUpdate、componentDidCatch
 2. 在业务复杂的情况啊集，耦合内聚的边界很难把握
 3. 有着严格的规则约束
 
 ### 使用原则
+
 1. 只在 React 函数中调用 Hook
 2. 不在循环、条件或嵌套函数中调用 Hook
 
@@ -160,6 +169,7 @@ ReactDOM.render(
 # 七、Diff
 
 ## React 15 的栈调和算法
+
 1. 分层对比；
 2. 类型一致才有继续Diff的必要；
 3. key属性的设置，尽可能重用节点。
