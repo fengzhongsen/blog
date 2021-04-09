@@ -3,7 +3,7 @@ function deepCopy(obj, cache = []) {
     return obj;
   }
 
-  const hit = cache.find(item => item.original === item);
+  const hit = cache.find(item => item.original === obj);
   if (hit) {
     return hit.copy;
   }
@@ -17,7 +17,7 @@ function deepCopy(obj, cache = []) {
   });
 
   Object.keys(obj).forEach(key => {
-    copy[key] = deepCopy(obj[key]);
+    copy[key] = deepCopy(obj[key], cache);
   });
 
   return copy;
