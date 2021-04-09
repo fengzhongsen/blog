@@ -7,6 +7,16 @@ Array.prototype._map = function map(callback, context) {
   return array;
 }
 
+Array.prototype._map_by_reduce = function _map_by_reduce(callback, context) {
+  const array = this;
+  if (array.length === 0) {
+    return [];
+  }
+  array.reduce((pre, cur, index, array) => {
+    callback.call(context, cur, index, array);
+  }, array[0])
+};
+
 Array.prototype._filter = function filter(callback, context) {
   const array = this;
   const result = [];

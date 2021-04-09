@@ -56,15 +56,13 @@ function all(promises) {
 12.   用数组的reduce方法实现map方法
 
 ```js
-Array.prototype._map = function _map(fn) {
+Array.prototype._map_by_reduce = function _map_by_reduce(callback, context) {
   const array = this;
   if (array.length === 0) {
-    return;
+    return [];
   }
-  let index = 0;
-  array.reduce((pre, cur) => {
-    fn(cur, index, array);
-    index += 1;
+  array.reduce((pre, cur, index, array) => {
+    callback.call(context, cur, index, array);
   }, array[0])
 };
 ```
@@ -106,37 +104,49 @@ function fetchLimit(urls, limit, timeout): Promise<string[]> {
 ```
 
 ```js
-function fetch(url) {
-    return Promise.resolve(url);
+function get(url) {
+  return Promise.resolve(url);
 }
+
+async function fetch(url, timeout) {
+  const req = get(url);
+  const timer = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject('timeout');
+    }, timeout)
+  })
+  return new Promise.race([req, timer]);
+}
+
+
 // 没写完
 function fetchLimit(urls, limit, timeout) {
-    return new Promise((resolve, reject) => {
-        const len = urls.length;
-        const result = new Array(len);
-        let count = 0;
+  return new Promise((resolve, reject) => {
+    const len = urls.length;
+    const result = new Array(len);
+    let count = 0;
 
-        function request() {
-            const index = len - urls.length - 1;
-            if(urls.length === 0) {
-                return;
-            }
-            const url = urls.shift();
-            fetch(url).then(resp=>{
-                result[index] = resp;
-                if(++count === len){
-                    resolve(result);
-                } else {
-                  request();
-                }
-            }).catch(err=>{
-                reject(err);
-            })
+    function request() {
+      const index = len - urls.length - 1;
+      if (urls.length === 0) {
+        return;
+      }
+      const url = urls.shift();
+      fetch(url, timeout).then(resp => {
+        result[index] = resp;
+        if (++count === len) {
+          resolve(result);
+        } else {
+          request();
         }
+      }).catch(err => {
+        reject(err);
+      })
+    }
 
-        for(let i = 0; i < limit; i++) {
-            request();
-        }
-    })
+    for (let i = 0; i < limit; i++) {
+      request();
+    }
+  })
 }
 ```
