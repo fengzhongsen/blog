@@ -87,3 +87,60 @@ console.log(_flat([1, [2, 3, 4], [4, 5], 6, 7, 8]))
 16. http2.0 push 和 websocket 区别，push 是谁主动的，push有什么劣势
 17. 网络七层协议
 18. 图片分片上传
+
+## 二面
+
+平衡点问题: 一个数组中的元素，如果其前面的部分等于后面的部分，那么这个点的位序就是平衡点。
+比如列表numbers = [1, 3, 5, 7, 8, 25, 4, 20]，25前面的总和为24，25，后面的总和也是24，那么25就是这个列表的平衡点。
+要求编写程序，寻找并返回一个列表的所有平衡点。
+
+```js
+function balance1(array) {
+    const result = [];
+    for(let i = 0, l = array.length; i <l; i++) {
+        const p = array[i];
+        const arr1 = array.slice(0, i);
+        const arr2 = array.slice(i + 1, l);
+        let first = 0;
+        let second = 0;
+        arr1.forEach(item => {
+            first += item;
+        })
+        arr2.forEach(item => {
+            second += item;
+        })
+        if(first === second) {
+            result.push(p);
+        }
+    }
+    return result;
+}
+
+function balance2(array) {
+    const result = [];
+    const map1 = {};
+    const map2 = {};
+    let count1 = 0;
+    let count2 = 0;
+    for(let i = 0, l = array.length; i <l; i++) {
+        count1 += array[i];
+        map1[i] = count1;
+    }
+    for(let i = array.length - 1; i > 0; i--) {
+        count2 += array[i];
+        map2[i] = count2;
+    }
+    for(let i = 1, l = array.length; i <l; i++) {
+        const p = array[i];
+        if(map1[i-1] === map2[i+1]) {
+            result.push(p);
+        }
+    }
+    return result;
+}
+
+const numbers = [1, 3, 5, 7, 8, 25, 4, 20];
+console.log(balance1(numbers));
+console.log(balance2(numbers));
+
+```

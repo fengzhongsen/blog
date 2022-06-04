@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "deploy": "./publish/deploy.sh"
   },
   "devDependencies": {
     "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.3",
