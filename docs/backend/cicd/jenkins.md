@@ -90,13 +90,13 @@ sudo systemctl start jenkins
 ::: warning
 这里你可能会遇到一些问题，Jenkins 默认端口是 8080，但阿里云默认不开启 8080 端口，需要手动添加。
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/aliyun-port-config-01.png">
+<img src="/images/jenkins/aliyun-port-config-01.png">
 
 :::
 
 （1）假设服务器IP是 `120.130.140.150`，在浏览器中输入 `http://120.130.140.150:8080`，根据提示获取指定文件中的密码，这里你可能需要[在本地登录远程服务器](/tech/在本地登录远程服务器/)后执行下述命令。
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/1.png" />
+<img src="/images/jenkins/1.png" />
 
 ```
 $ cat /var/lib/jenkins/secrets/initialAdminPassword
@@ -104,7 +104,7 @@ $ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 （2）安装推荐的插件，成功（或部分插件安装失败）后创建第一个管理员用户，输入 `用户名` 、`密码`、`全名`、`邮箱` 后点两次`完成并保存` 就OK了。
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/2.png" />
+<img src="/images/jenkins/2.png" />
 
 ### 2.3 安装 Nginx
 1. 安装 `Nginx`
@@ -155,22 +155,22 @@ $ nginx -s reload
 3. 点击最下方 `Generate token` 完成创建
 4. 创建完成后，找个地方手动记录下生成的 `Secret text`，大概长这样：`aa406d89b16c37d73e2beaec5e9bf8bdfcb52982`
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/github-config-01.png">
+<img src="/images/jenkins/github-config-01.png">
 
 ### 3.2 配置 GitHub 选项
 进入 `Manage Jenkins - Config System` 配置 `GitHub - Github 服务器`。
 1. 添加一个服务器，名称看心情，可为空。
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/4.png">
+<img src="/images/jenkins/4.png">
 
 2. 添加一个 `Secret text` **类型**的 `全局凭证`。**Secret**中填入 3.1 中的 `Secret text`： `aa406d89b16c37d73e2beaec5e9bf8bdfcb52982`，**描述**简单写一下。
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/5.png">
+<img src="/images/jenkins/5.png">
 
 ### 3.3 配置 Git 选项
 进入 `Manage Jenkins - Global Tool Configuration` 配置 `Git - Path to Git executable`。
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/3.png">
+<img src="/images/jenkins/3.png">
 
 ::: tip 提示
 可使用 `whereis git` 命令查看 `Git` 的位置。
@@ -179,21 +179,21 @@ $ nginx -s reload
 ## 四、自由风格项目的配置
 创建一个新的项目，输入一个任务名称，选择 `Freestyle project`
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/project-config-00.png">
+<img src="/images/jenkins/project-config-00.png">
 
 ### 4.1 General
 分别配置 `描述`、`GitHub项目`、`丢弃旧的构建策略` 三个选项
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/project-config-01.png">
+<img src="/images/jenkins/project-config-01.png">
 
 ### 4.2 源码管理
 分别配置 `Git`、`源码库浏览器` 两个选项
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/project-config-02.png">
+<img src="/images/jenkins/project-config-02.png">
 
 这里需要添加一个 `Username with password` **类型**的`全局凭证`，**用户名**和**密码**分别是 `GitHub` 的用户名和密码，**描述**简单写一下。
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/project-config-03.png">
+<img src="/images/jenkins/project-config-03.png">
 
 ### 4.3 构建触发器
 > 该部分可以独立于本节之外，单独配置 
@@ -205,16 +205,16 @@ $ nginx -s reload
 
 1. 勾选 `Use secret text(s) or file(s)`，并新增一个 `Secret text` **类型**的**绑定**。
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/project-config-05.png">
+<img src="/images/jenkins/project-config-05.png">
 
 2. 凭证选择已有的 `Secret text` **类型**的 `全局凭证`。
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/project-config-06.png">
+<img src="/images/jenkins/project-config-06.png">
 
 ### 4.5 构建
 新增一个`执行shell` 类型的构建，并编写编译和部署项目的shell脚本。
 
-<img src="https://cdn.fblog.top/blog/images/jenkins/project-config-07.png">
+<img src="/images/jenkins/project-config-07.png">
 
 ::: warning
 一、到目前为止我们对服务器的操作都是以 root 用户的身份进行的，但是 Jenkins 的默认用户是 jenkins，而 jenkins 没有权限操作属于 root 的文件，所以我们需要修改 Jenkins 配置文件，将Jenkins 的默认用户 jenkins 改成 root<br/>

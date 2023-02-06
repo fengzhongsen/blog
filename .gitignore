@@ -1,4 +1,5 @@
 node_modules
 docs/.vuepress/dist
 .idea
-.DS_Store
+.vscode
+*/.DS_Store
