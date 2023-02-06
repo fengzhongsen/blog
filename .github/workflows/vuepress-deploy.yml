@@ -11,8 +11,8 @@ jobs:
         uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: fengzhongsen/blog
-          TARGET_BRANCH: dist
-          BUILD_SCRIPT: yarn && yarn docs:build
+          TARGET_REPO: fengzhongsen/fengzhongsen.github.io
+          TARGET_BRANCH: blog
+          BUILD_SCRIPT: yarn && yarn build
           BUILD_DIR: docs/.vuepress/dist
           CNAME: https://blog.ifelse.site
